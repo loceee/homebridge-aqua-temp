@@ -4,11 +4,11 @@ import { PlatformConfig, Logger } from 'homebridge';
 
 export class HttpRequest {
 
-  readonly urlLogin = 'http://cloud.linked-go.com:84/cloudservice/api/app/user/login.json';
-  readonly urlDevicesList = 'http://cloud.linked-go.com:84/cloudservice/api/app/device/deviceList.json';
-  readonly urlDevicesData = 'http://cloud.linked-go.com:84/cloudservice/api/app/device/getDataByCode.json';
-  readonly urlUpdateDevice = 'http://cloud.linked-go.com:84/cloudservice/api/app/device/control.json';
-
+  readonly urlLogin = 'https://cloud.linked-go.com:449/crmservice/api/app/user/login';
+  readonly urlDevicesList = 'https://cloud.linked-go.com:449/crmservice/api/app/device/deviceList';
+  readonly urlDevicesData = 'https://cloud.linked-go.com:449/crmservice/api/app/device/getDataByCode';
+  readonly urlUpdateDevice = 'https://cloud.linked-go.com:449/crmservice/api/app/device/control';
+  
   constructor(
     public readonly config: PlatformConfig,
     public readonly log: Logger,
